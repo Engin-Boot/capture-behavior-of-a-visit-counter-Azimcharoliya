@@ -9,11 +9,11 @@ Scenario: Report visitor trends during a week of operation
 Scenario: Alert when seating capacity is full
 
   Given the hostipal has visitor-count sensor system working\
-  When the occupied seating is equal or greater than set seating capacity threshold 
+  When the occupied seating is greater than set seating capacity threshold
   Then alert the facilities manager.
   
 Scenario: Alert when parking capacity is full
 
   Given the hostipal has visitor-count sensor system working\
-  When the occupied parking is equal or greater than set parking capacity threshold 
+  When the occupied parking is greater than set parking capacity threshold
   Then alert the facilities manager.
