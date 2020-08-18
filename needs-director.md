@@ -10,7 +10,7 @@ Scenario: Compute parking slots to reserve for visiting specialists
 
   Given the hospital has visitor count sensor system working\
   When the director requests to reserve parking slots\
-  Then check avaliablity of parking spots
+  Then check availablity of parking spots
   if available then reserve the spots
   else display parking slots not available to director and
   notify the director when the parking spots are available.
